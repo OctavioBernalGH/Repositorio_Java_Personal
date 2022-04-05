@@ -15,6 +15,9 @@ public class Ejercicio_1 {
 		System.out.print("- Introduce otro número: ");
 		int dato2 = scanner.nextInt();
 		
+		scanner.close();
+		
+		/* Usamos las funciones sin almacenar el resultado en una variable */
 		System.out.println("\n La suma de " + dato1 + " y " + dato2 + " es: " + (sumar(dato1, dato2)));
 		System.out.println("\n La resta de " + dato1 + " y " + dato2 + " es: " + (restar(dato1, dato2)));
 		System.out.println("\n La multiplicación de " + dato1 + " y " + dato2 + " es: " + (multiplicar(dato1, dato2)));
@@ -22,6 +25,7 @@ public class Ejercicio_1 {
 
 	}
 
+	/* Conjunto de funciones */
 	static int sumar(int num1, int num2) {
 		return (num1 + num2);
 	}
